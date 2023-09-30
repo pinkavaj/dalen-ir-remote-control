@@ -4,7 +4,7 @@ Describe protocol used for cotrolling of Dalen LED light using infrared
 remote cotroller.
 
 The attached Arduino project transmits those commands on arduino pin 3.
-The commands are executed by sending appropriate letter on Rx pin using
+The commands are transmited by sending appropriate letter on Rx pin using
 9600 baud rate. Send 'h' for help.
 
 * modulation frequency: 38000 Hz
@@ -12,6 +12,7 @@ The commands are executed by sending appropriate letter on Rx pin using
 * bit: 422 us (on = 1 or off = 0) + 422 us off
 
 ## List of commands
+COMMAND (UART letter to run the command) = pulse sequence
 
 Off (f)         = start + 110110110110111101101011011110101011011011010111111111111011111110111110111011110101101
 On (o)          = start + 110110110110111101101011011110101011011011010111111111110110110101011011111011101111011011
